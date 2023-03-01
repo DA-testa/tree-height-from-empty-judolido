@@ -35,6 +35,7 @@ def main():
     else :
         filename = input()
         fstr = str(filename)
+        print(filename)
         if (bool(re.search('a', fstr[-2:]))):
             return
         else:
