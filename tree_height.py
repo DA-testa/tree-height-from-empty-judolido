@@ -35,17 +35,16 @@ def main():
     else :
         filename = input()
         fstr = str(filename)
-        print("THIS IS THE INPUT" + filename + "THIS IS THE INPUT")
+        #print(filename)
         if (bool(re.search('a', fstr[-2:]))):
             return
         else:
-            with open(filename) as file:
+            with open("/home/runner/work/tree-height-from-empty-judolido/tree-height-from-empty-judolido/test/" + filename) as file:
                 n = int(file.readline())
                 parents = list(map(int, file.readline().split()))
         # compute height of tree
         height = compute_height(n, parents)
-        print("THIS IS THE INPUT" + filename + "THIS IS THE INPUT")
-        # print(height)
+        print(height)
 
 
 sys.setrecursionlimit(10**7)
