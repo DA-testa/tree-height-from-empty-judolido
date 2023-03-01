@@ -35,7 +35,7 @@ def main():
     else :
         filename = input()
         fstr = str(filename)
-        print(filename)
+        print("THIS IS THE INPUT" + filename + "THIS IS THE INPUT")
         if (bool(re.search('a', fstr[-2:]))):
             return
         else:
@@ -44,7 +44,8 @@ def main():
                 parents = list(map(int, file.readline().split()))
         # compute height of tree
         height = compute_height(n, parents)
-        print(height)
+        print("THIS IS THE INPUT" + filename + "THIS IS THE INPUT")
+        # print(height)
 
 
 sys.setrecursionlimit(10**7)
