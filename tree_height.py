@@ -23,7 +23,7 @@ def compute_height(n, parents):
 def main():
     # read input from stdin
     Select = input()
-    if (Select == "I"):
+    if (Select[0] == "I"):
         n = int(input())
         parents = list(map(int, input().split()))
 
